@@ -1,0 +1,131 @@
+.song-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 20px;
+  border-radius: 12px;
+  border-left: 4px solid;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-right: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  transition: transform 0.2s, background 0.2s;
+  cursor: pointer;
+}
+
+.song-card:hover {
+  transform: translateY(-2px);
+}
+
+.song-card.late-night {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.song-card.late-night:hover {
+  background: rgba(255, 255, 255, 0.09);
+}
+
+.song-card.late-night .song-title {
+  color: #ffffff;
+}
+
+.song-card.late-night .song-artist {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.song-card.late-night .track-number {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.song-card.late-night .song-duration {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.song-card.daylight {
+  background: rgba(0, 0, 0, 0.04);
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  border-right: 1px solid rgba(0, 0, 0, 0.08);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.song-card.daylight:hover {
+  background: rgba(0, 0, 0, 0.08);
+}
+
+.song-card.daylight .song-title {
+  color: #111111;
+}
+
+.song-card.daylight .song-artist {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.song-card.daylight .track-number {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.song-card.daylight .song-duration {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.track-number {
+  font-size: 13px;
+  font-weight: 600;
+  min-width: 24px;
+}
+
+.song-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.song-title {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.song-artist {
+  font-size: 13px;
+}
+
+.song-genre {
+  font-size: 11px;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 20px;
+  color: #000000;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.song-duration {
+  font-size: 13px;
+  min-width: 36px;
+  text-align: right;
+}
+
+.remove-btn {
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  transition: opacity 0.2s, transform 0.1s;
+}
+
+.remove-btn:hover {
+  opacity: 0.85;
+  transform: translateY(-1px);
+}
+
+.remove-btn.late-night {
+  background: rgba(239, 68, 68, 0.15);
+  color: #f87171;
+}
+
+.remove-btn.daylight {
+  background: rgba(239, 68, 68, 0.1);
+  color: #dc2626;
+}

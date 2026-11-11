@@ -1,0 +1,12 @@
+.dashboard-wrapper {
+  min-height: 100vh;
+  transition: background 0.3s;
+}
+
+.dashboard-wrapper.daylight {
+  background: linear-gradient(135deg, #e0e7ff, #c7d2fe, #a5b4fc);
+}
+
+.dashboard-wrapper.daylight {
+  background: linear-gradient(135deg, #ffffff, #f5f0ff, #ede9fe);
+}
